@@ -18,6 +18,43 @@
     width: 480px;
     min-height: 160px;
     margin-bottom: 40px;
+    align-items: center;
+}
+
+.leaderboard-table {
+    width: 240px;
+    flex-direction: column;
+}
+
+.leaderboard-row {
+    flex-direction: row;
+    height: 24px;
+    align-items: center;
+}
+
+.leaderboard-header-row {
+    margin-bottom: 8px;
+}
+
+.leaderboard-rank {
+    width: 40px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    -unity-text-align: middle-left;
+}
+
+.leaderboard-initials {
+    width: 80px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    -unity-text-align: middle-center;
+}
+
+.leaderboard-score {
+    width: 120px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    -unity-text-align: middle-right;
 }
 
 .start-prompt {
