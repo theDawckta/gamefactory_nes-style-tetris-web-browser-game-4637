@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1902 &1902000000
+BuildProfile:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WebGL Build Profile
+  m_BuildTarget: 13
+  m_SubTarget: 0
+  m_PlayerSettingsYaml:
+  m_Scenes: []
+  m_AssetBundleManifestPath:
+  m_PlatformIconsBySubKindId: {}
+  m_PlatformBuildProfile: {fileID: 0}
