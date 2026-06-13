@@ -25,6 +25,9 @@ public class GameplayController : MonoBehaviour
 
     private void Start()
     {
+        _playfieldRenderer.gameObject.SetActive(false);
+        _nextPiecePreview.gameObject.SetActive(false);
+
         GameStateManager.Instance.OnEnterPlaying += OnEnterPlaying;
         GameStateManager.Instance.OnEnterStart += OnLeavePlayingState;
         GameStateManager.Instance.OnEnterGameOver += OnLeavePlayingState;
@@ -71,6 +74,11 @@ public class GameplayController : MonoBehaviour
             _heldActions.Contains("RotateRight"),
             _heldActions.Contains("SoftDrop")
         );
+
+        _playfieldRenderer.SetActivePiece(
+            _pieceController.GetCurrentCellPositions(),
+            _pieceController.GetCurrentColorIndex()
+        );
     }
 
     public void CacheLeaderboard(ScoreEntry[] scores)
@@ -84,6 +92,9 @@ public class GameplayController : MonoBehaviour
         _playfieldController.Reset();
         _pieceBag = new PieceBag(_tetrominoData);
         _isPlaying = true;
+        _heldActions.Clear();
+        _playfieldRenderer.gameObject.SetActive(true);
+        _nextPiecePreview.gameObject.SetActive(true);
         _gameScreen.Show();
         SpawnNext();
     }
@@ -91,6 +102,8 @@ public class GameplayController : MonoBehaviour
     private void OnLeavePlayingState()
     {
         _isPlaying = false;
+        _playfieldRenderer.gameObject.SetActive(false);
+        _nextPiecePreview.gameObject.SetActive(false);
         _playfieldRenderer.ClearActivePiece();
     }
 

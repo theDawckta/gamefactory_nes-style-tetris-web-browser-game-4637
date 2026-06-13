@@ -10,7 +10,7 @@ public class PlayfieldRenderer : MonoBehaviour
     private SpriteRenderer[,] _boardCells;
     private SpriteRenderer[] _pieceCells;
 
-    private void Start()
+    private void Awake()
     {
         CreateBoardCells();
         CreatePieceCells();

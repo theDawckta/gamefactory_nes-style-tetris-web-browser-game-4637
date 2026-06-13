@@ -8,6 +8,7 @@ namespace Tetris.UI
     {
         private Label _scoreLabel;
         private Label _continuePrompt;
+        private VisualElement _highScoreEntryRegion;
         private bool _highScoreEntryActive;
         private HighScoreEntryWidget _widget;
 
@@ -16,7 +17,8 @@ namespace Tetris.UI
             base.Awake();
             _scoreLabel = GetElement("score-label") as Label;
             _continuePrompt = GetElement("continue-prompt") as Label;
-            _widget = GetComponent<HighScoreEntryWidget>();
+            _highScoreEntryRegion = GetElement("high-score-entry-region");
+            _widget = GetComponentInChildren<HighScoreEntryWidget>();
         }
 
         private void Start()
@@ -66,6 +68,9 @@ namespace Tetris.UI
                 _widget.Activate(finalScore);
             else
                 _widget?.Deactivate();
+
+            if (_highScoreEntryRegion != null)
+                _highScoreEntryRegion.style.display = _highScoreEntryActive ? DisplayStyle.Flex : DisplayStyle.None;
 
             if (_continuePrompt != null)
                 _continuePrompt.style.display = _highScoreEntryActive ? DisplayStyle.None : DisplayStyle.Flex;

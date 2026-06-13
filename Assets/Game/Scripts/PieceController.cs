@@ -51,7 +51,7 @@ public class PieceController : MonoBehaviour
     {
         _piece = piece;
         _rotationIndex = 0;
-        _position = new Vector2Int(3, 0);
+        _position = new Vector2Int(3, 1);
         _gravityCounter = 0;
         _isGrounded = false;
         _lockCounter = 0;

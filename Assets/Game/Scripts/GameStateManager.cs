@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using OneTimeGames.CoreSystems;
 using UnityEngine;
 
@@ -32,6 +33,12 @@ public class GameStateManager : MonoBehaviour
     {
         if (Instance == this)
             Instance = null;
+    }
+
+    private IEnumerator Start()
+    {
+        yield return null;
+        GoToStart();
     }
 
     private void Update()
