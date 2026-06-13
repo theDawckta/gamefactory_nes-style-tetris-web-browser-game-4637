@@ -3,6 +3,8 @@
     <Style src="project://database/Assets/Game/UI/GameScreen.uss" />
     <ui:VisualElement name="screen-root" class="screen-root">
         <!-- HUD region: score, level, next piece preview widgets (child tickets) -->
-        <ui:VisualElement name="hud-region" class="hud-region" />
+        <ui:VisualElement name="hud-region" class="hud-region">
+            <ui:Label text="NEXT" name="next-label" class="next-label" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
