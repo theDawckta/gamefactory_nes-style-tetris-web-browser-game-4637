@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd">
+    <Style src="project://database/Assets/Game/UI/StartScreen.uss" />
+    <ui:VisualElement name="screen-root" class="screen-root">
+        <ui:Label text="NES TETRIS" name="title-label" class="title-label" />
+        <!-- Leaderboard table widget region (child ticket) -->
+        <ui:VisualElement name="leaderboard-region" class="leaderboard-region" />
+        <ui:Label text="PRESS DOWN TO START" name="start-prompt" class="start-prompt" />
+    </ui:VisualElement>
+</ui:UXML>
