@@ -1,0 +1,27 @@
+.screen-root {
+    flex-grow: 1;
+    background-color: rgba(8, 8, 16, 1);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-label {
+    font-size: 48px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 40px;
+    -unity-text-align: middle-center;
+}
+
+/* TODO: replace with custom sprite border/decoration when art asset is available */
+.leaderboard-region {
+    width: 480px;
+    min-height: 160px;
+    margin-bottom: 40px;
+}
+
+.start-prompt {
+    font-size: 16px;
+    color: rgba(180, 180, 180, 1);
+    -unity-text-align: middle-center;
+}
