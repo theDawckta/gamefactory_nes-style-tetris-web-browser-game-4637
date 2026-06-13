@@ -7,16 +7,16 @@ namespace Tetris.UI
     public class GameOverScreen : BaseScreen
     {
         private Label _scoreLabel;
-        private VisualElement _highScoreEntryRegion;
         private Label _continuePrompt;
         private bool _highScoreEntryActive;
+        private HighScoreEntryWidget _widget;
 
         protected override void Awake()
         {
             base.Awake();
             _scoreLabel = GetElement("score-label") as Label;
-            _highScoreEntryRegion = GetElement("high-score-entry-region");
             _continuePrompt = GetElement("continue-prompt") as Label;
+            _widget = GetComponent<HighScoreEntryWidget>();
         }
 
         private void Start()
@@ -62,8 +62,11 @@ namespace Tetris.UI
 
             _highScoreEntryActive = QualifiesForTop5(finalScore, currentLeaderboard);
 
-            if (_highScoreEntryRegion != null)
-                _highScoreEntryRegion.style.display = _highScoreEntryActive ? DisplayStyle.Flex : DisplayStyle.None;
+            if (_highScoreEntryActive && _widget != null)
+                _widget.Activate(finalScore);
+            else
+                _widget?.Deactivate();
+
             if (_continuePrompt != null)
                 _continuePrompt.style.display = _highScoreEntryActive ? DisplayStyle.None : DisplayStyle.Flex;
 

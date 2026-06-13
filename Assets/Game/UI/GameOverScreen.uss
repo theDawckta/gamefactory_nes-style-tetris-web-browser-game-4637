@@ -30,8 +30,53 @@
 
 .high-score-entry-region {
     width: 100%;
-    min-height: 60px;
     margin-bottom: 16px;
+    align-items: center;
+}
+
+.entry-header {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 12px;
+    -unity-text-align: upper-center;
+}
+
+.slot-row {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.char-slot {
+    width: 32px;
+    height: 40px;
+    border-width: 2px;
+    border-color: rgba(180, 180, 200, 1);
+    justify-content: center;
+    align-items: center;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.slot-char {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    -unity-text-align: middle-center;
+}
+
+.slot-cursor {
+    position: absolute;
+    left: 3px;
+    right: 3px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    bottom: 4px;
+}
+
+.confirm-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 12px;
+    -unity-text-align: upper-center;
 }
 
 .continue-prompt {
