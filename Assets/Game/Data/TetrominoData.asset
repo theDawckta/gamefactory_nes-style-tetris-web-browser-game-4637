@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7b045f424f4889b559feb44d9e4fc8, type: 3}
+  m_Name: TetrominoData
+  m_EditorClassIdentifier: Game.Scripts::TetrominoData
+  pieces:
+  - pieceName: I
+    atlasIndex: 1
+    rotations:
+    - cells:
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: 2, y: 0}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: 0, y: 0}
+      - {x: 0, y: 1}
+      - {x: 0, y: 2}
+  - pieceName: O
+    atlasIndex: 2
+    rotations:
+    - cells:
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+  - pieceName: T
+    atlasIndex: 3
+    rotations:
+    - cells:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+    - cells:
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: 0, y: 1}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+      - {x: 0, y: 1}
+  - pieceName: S
+    atlasIndex: 4
+    rotations:
+    - cells:
+      - {x: 0, y: -1}
+      - {x: 1, y: -1}
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: 1, y: 1}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: 1, y: -1}
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: 1, y: 1}
+  - pieceName: Z
+    atlasIndex: 5
+    rotations:
+    - cells:
+      - {x: -1, y: -1}
+      - {x: 0, y: -1}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+      - {x: -1, y: 1}
+    - cells:
+      - {x: -1, y: -1}
+      - {x: 0, y: -1}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+      - {x: -1, y: 1}
+  - pieceName: J
+    atlasIndex: 6
+    rotations:
+    - cells:
+      - {x: -1, y: -1}
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: 1, y: -1}
+      - {x: 0, y: 0}
+      - {x: 0, y: 1}
+    - cells:
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: 1, y: 1}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: 0, y: 0}
+      - {x: -1, y: 1}
+      - {x: 0, y: 1}
+  - pieceName: L
+    atlasIndex: 7
+    rotations:
+    - cells:
+      - {x: 1, y: -1}
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+    - cells:
+      - {x: 0, y: -1}
+      - {x: 0, y: 0}
+      - {x: 0, y: 1}
+      - {x: 1, y: 1}
+    - cells:
+      - {x: -1, y: 0}
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: -1, y: 1}
+    - cells:
+      - {x: -1, y: -1}
+      - {x: 0, y: -1}
+      - {x: 0, y: 0}
+      - {x: 0, y: 1}
+  cellSprites:
+  - {fileID: -4730573424505813790, guid: d17d8bab5ecfff3479c0cb0edbd2e1cc, type: 3}
+  - {fileID: 7630912892359839714, guid: d17d8bab5ecfff3479c0cb0edbd2e1cc, type: 3}
+  - {fileID: -1321963903000192002, guid: d17d8bab5ecfff3479c0cb0edbd2e1cc, type: 3}
+  - {fileID: -7531090336113967330, guid: d17d8bab5ecfff3479c0cb0edbd2e1cc, type: 3}
+  - {fileID: -4024963047948742005, guid: d17d8bab5ecfff3479c0cb0edbd2e1cc, type: 3}
+  - {fileID: -3387573334769027576, guid: d17d8bab5ecfff3479c0cb0edbd2e1cc, type: 3}
+  - {fileID: 6761725192643484409, guid: d17d8bab5ecfff3479c0cb0edbd2e1cc, type: 3}
+  - {fileID: -1234818643603757743, guid: d17d8bab5ecfff3479c0cb0edbd2e1cc, type: 3}
