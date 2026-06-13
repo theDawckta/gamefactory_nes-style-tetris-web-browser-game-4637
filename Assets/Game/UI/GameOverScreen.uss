@@ -1,0 +1,40 @@
+/* Full-screen semi-transparent dark overlay */
+.dimmer {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centered content box -- TODO: replace with overlay_panel.png 9-slice (borders 4/4/4/4) when asset is available */
+.content-box {
+    width: 420px;
+    padding: 32px;
+    background-color: rgba(16, 16, 32, 1);
+    border-width: 4px;
+    border-color: rgba(180, 180, 200, 1);
+    align-items: center;
+}
+
+.game-over-header {
+    font-size: 40px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.score-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 24px;
+}
+
+.high-score-entry-region {
+    width: 100%;
+    min-height: 60px;
+    margin-bottom: 16px;
+}
+
+.continue-prompt {
+    font-size: 14px;
+    color: rgba(180, 180, 180, 1);
+}
