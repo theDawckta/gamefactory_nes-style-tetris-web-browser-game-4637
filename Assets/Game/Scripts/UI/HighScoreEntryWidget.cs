@@ -52,7 +52,7 @@ namespace Tetris.UI
                 _confirmLabel = root.Q<Label>("confirm-label");
             }
 
-            _inputHandler = Object.FindFirstObjectByType<InputHandler>();
+            _inputHandler = Object.FindAnyObjectByType<InputHandler>();
             if (_inputHandler != null)
                 _inputHandler.OnActionDown += OnActionDown;
         }

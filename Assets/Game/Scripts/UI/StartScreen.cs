@@ -26,7 +26,7 @@ namespace Tetris.UI
                 GameStateManager.Instance.OnEnterGameOver += Hide;
             }
 
-            _inputHandler = UnityEngine.Object.FindFirstObjectByType<InputHandler>();
+            _inputHandler = UnityEngine.Object.FindAnyObjectByType<InputHandler>();
             if (_inputHandler != null)
                 _inputHandler.OnActionDown += OnActionDown;
 
