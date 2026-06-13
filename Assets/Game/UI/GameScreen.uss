@@ -21,3 +21,20 @@
     -unity-text-align: upper-left;
     margin-bottom: 4px;
 }
+
+.level-display {
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.hud-label {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    -unity-text-align: upper-left;
+}
+
+.hud-value {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    -unity-text-align: upper-left;
+}
