@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd">
+    <Style src="project://database/Assets/Game/UI/GameScreen.uss" />
+    <ui:VisualElement name="screen-root" class="screen-root">
+        <!-- HUD region: score, level, next piece preview widgets (child tickets) -->
+        <ui:VisualElement name="hud-region" class="hud-region" />
+    </ui:VisualElement>
+</ui:UXML>
