@@ -1,0 +1,13 @@
+{
+  "name": "leaderboard-server",
+  "version": "1.0.0",
+  "description": "Global top-5 leaderboard HTTP server for NES-Style Tetris",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
