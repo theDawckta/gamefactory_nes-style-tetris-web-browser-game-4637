@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd">
+    <Style src="project://database/Assets/Game/UI/GameOverScreen.uss" />
+    <ui:VisualElement name="dimmer" class="dimmer">
+        <ui:VisualElement name="content-box" class="content-box">
+            <ui:Label text="GAME OVER" name="game-over-header" class="game-over-header" />
+            <ui:Label text="SCORE: 0000000" name="score-label" class="score-label" />
+            <!-- High score entry widget region (child ticket, conditionally visible) -->
+            <ui:VisualElement name="high-score-entry-region" class="high-score-entry-region" style="display: none;" />
+            <ui:Label text="PRESS DOWN TO CONTINUE" name="continue-prompt" class="continue-prompt" style="display: none;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
