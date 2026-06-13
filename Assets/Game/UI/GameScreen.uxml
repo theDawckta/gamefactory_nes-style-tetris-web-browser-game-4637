@@ -4,6 +4,10 @@
     <ui:VisualElement name="screen-root" class="screen-root">
         <!-- HUD region: score, level, next piece preview widgets (child tickets) -->
         <ui:VisualElement name="hud-region" class="hud-region">
+            <ui:VisualElement name="score-display" class="score-display">
+                <ui:Label text="SCORE" name="score-header" class="hud-label" />
+                <ui:Label text="0000000" name="score-value" class="score-value" />
+            </ui:VisualElement>
             <ui:VisualElement name="level-display" class="level-display">
                 <ui:Label text="LEVEL" name="level-header" class="hud-label" />
                 <ui:Label text="1" name="level-value" class="hud-value" />
