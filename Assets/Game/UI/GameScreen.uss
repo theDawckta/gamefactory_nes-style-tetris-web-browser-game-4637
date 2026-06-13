@@ -1,0 +1,16 @@
+/* Transparent so world-space PlayfieldRenderer shows through */
+.screen-root {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* Right of playfield (240x480 centered at 1280x720): playfield x=520-760, hud x=700-950, y=120-600 */
+.hud-region {
+    position: absolute;
+    left: 700px;
+    top: 120px;
+    width: 250px;
+    height: 480px;
+    flex-direction: column;
+    align-items: flex-start;
+}
