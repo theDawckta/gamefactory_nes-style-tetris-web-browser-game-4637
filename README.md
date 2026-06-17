@@ -1,6 +1,6 @@
 # NES-Style Tetris - Web Browser Game
 
-Built with [AI Game Factory](https://github.com/theDawckta/ai-game-factory) by OneTime Games.
+Built with [AI Game Factory](https://github.com/theDawckta/ai-game-factory)
 
 ## Overview
 
